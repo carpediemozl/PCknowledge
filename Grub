@@ -1,0 +1,16 @@
+sudo apt update
+sudo add-apt-repository universe
+sudo apt update
+
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt update
+sudo apt install grub-customizer
+等待应用锁结束 大概三分钟
+
+装完成后，在您的应用程序列表里找到并打开 “Grub Customizer”。
+打开后，它会加载您当前的启动项列表。
+在 “列表配置” 选项卡中，您会看到所有的启动项，包括 Ubuntu 和 Windows Boot Manager。
+找到代表 Windows 11 的那个启动项 (通常名字里会包含 "Windows Boot Manager")。
+选中它，然后点击顶部工具栏里的 向上箭头 按钮，把它移动到列表的最顶端。
+移动到第一位后，点击左上角的 “保存” 按钮。
+程序会自动更新 GRUB 配置。完成后，关闭软件即可
